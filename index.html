@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>FATsoft Entertainment</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FATsoft</title>
+  <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+   
+      
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+      </li>
+      <li>
+        <a href="#">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+
+  <p>
+    
+    <span>
+      FATSOFT ENTERTAINMENT
+    </span>
+    &mdash; ÇOK YAKINDA HİZMETİNİZDEYİZ &mdash;
+  </p>
+
+  <style>
+    nav ul li a:before, nav ul li:before, nav ul li:after {
+  content: '';
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #fd650d;
+  transition: .4s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #93278F, #00A99D);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  position: relative;
+  padding: 4px 15px;
+  margin: 0 5px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li a {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 24px;
+  color: #6ae623;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 10px 5px;
+  transition: .4s ease;
+  z-index: 1;
+}
+
+nav ul li a:before {
+  left: 0;
+  bottom: 66.66%;
+}
+
+nav ul li:before {
+  right: 0;
+  top: 33.33%;
+}
+
+nav ul li:after {
+  left: 0;
+  bottom: 0;
+}
+
+nav ul li:hover a {
+  text-shadow: 1px 1px 5px #000;
+}
+
+nav ul li:hover a:before {
+  width: 100%;
+}
+
+nav ul li:hover:before, nav ul li:hover:after {
+  width: 100%;
+}
+
+body { font: 400 1em/1.5 "Neuton"; color: rgba(255,255,255,.25); text-align: center; margin: 0 }
   
-  <body>
-    <img alt="Work In Progress" src="work-in-progress.png" style="width:100%">
+  p {
+      text-transform: uppercase;
+      letter-spacing: .5em;
+      display: inline-block;
+      border: 4px double rgba(255,255,255,.25);
+      border-width: 4px 0;
+      padding: 1.5em 0em;
+      position: absolute;
+      top: 18%;
+      left: 50%;
+      width: 40em;
+      margin: 0 0 0 -20em;
+  }
+    
+    span {
+  
+        font: 700 4em/1 "Oswald", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+  
+  
+  
+        background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+  
+  
+  
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+  
+  
+  
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+  
+    }
+  
+  
+ 
+  
+  @-webkit-keyframes aitf {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+  }
+  </style>
+</body>
+
+<body>
+
+   
+      
+  
+  
   </body>
+
 </html>
