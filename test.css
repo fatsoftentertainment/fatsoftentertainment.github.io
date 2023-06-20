@@ -17,12 +17,6 @@ body {
   z-index: 500;
   font-family: poppins, sans-serif;  
   margin: 0px;
-
-  overflow: auto;
-  /*background-color: rgba(0, 0, 0, .4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  /*border-radius: 25px;*/
 }
 
 nav a {
@@ -31,19 +25,8 @@ nav a {
   margin: 0px 10px;
   padding: 12px;
   font-size: 3vh;
-
   float: center;
-  /*width: 23%;*/
   text-align: center;
- /* list-style: none;
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 12px 16px;
-  margin: 0 8px;
-  position: relative;
-  cursor: pointer;
-  white-space: nowrap;*/
 }
 
 #main-nav.sticky {
@@ -53,8 +36,8 @@ nav a {
 
 nav a.active {
   color: #ffffff;
-  background-color: #555;
-  border-radius: 5px;
+  background-color: #e9770d;
+  border-radius: 10px;
 
 }
 
