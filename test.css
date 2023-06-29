@@ -93,7 +93,7 @@ body {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: fit-content;
     overflow-y: auto;
   }
 }
