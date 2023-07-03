@@ -6,16 +6,6 @@ body {
   margin: 0px;
   font-family: 'segoe ui';
 }
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  heigth: 100vh;
-  background: #ffffff00;
-  justify-content: center;
-  alignItems: center;
-}
 
 
 .nav {
