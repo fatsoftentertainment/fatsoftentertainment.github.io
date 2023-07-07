@@ -1,3 +1,53 @@
+.icon-bar {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 6000;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+  scale: 1.2;
+}
+.mail{
+  background-color: #4285F4;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.github {
+  background: #171515;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.instagram {
+  background: #FD1D1D;
+  color: white;
+}
+/*iconbar end*/
+
 * {
   box-sizing: border-box;
 }
@@ -7,11 +57,10 @@ body {
   font-family: 'segoe ui';
 }
 
-
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #ff6702;
+  background-color: #000000f8;
   position: relative;
   position: fixed;
   z-index: 6000;
@@ -44,11 +93,13 @@ body {
   display: inline-block;
   padding: 13px 20px 13px 20px;
   text-decoration: none;
-  color: #efefef;
+  color: #ff6702;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: #000000;
 }
 
 .nav > #nav-check {
@@ -56,11 +107,18 @@ body {
 }
 
 @media (max-width:1200px) {
+  .icon-bar{
+    z-index: -1;
+  }
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
+  }
+  .nav > .nav-links > a:hover {
+    background-color: rgba(231, 219, 219, 0.897);
+    border-radius: 0;
   }
   .nav > .nav-btn > label {
     display: inline-block;
@@ -81,19 +139,19 @@ body {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #ff6702;
+    background-color: #0e0d0d;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    border-bottom:  1px solid #eee;;
+    padding: 0 0 0 0;
   }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
     text-align: center ;
-    border-top: 1px solid #eee
+    border-top: 1px solid #000000;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -139,10 +197,10 @@ section#person {
 
 section#contact {
   display: flex;
-  background: #1f2020;
+  background: linear-gradient(180deg, #1f2020,  #1f2020);
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 100vh;
+
 }
 
 article {
@@ -182,7 +240,6 @@ p {
     font-size: 11px;
   }
 }
-
 
 p span {
   font: 700 4em/1 "Oswald", sans-serif;
@@ -488,8 +545,7 @@ text-align: center;
     background-positon-x: 0px;
   }
 }
-
-
+/*footer end*/
 * {
   font-family: Nunito, sans-serif;
 }
